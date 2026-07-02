@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tự Lập 341 – Đồ Nhựa Gia Dụng Chất Lượng Cao</title>
+  <meta name="description" content="Tự Lập 341 – Chuyên cung cấp đồ nhựa gia dụng: hộp thực phẩm, rổ nhựa, ghế nhựa, kệ nhà bếp, tủ nhựa và đồ vệ sinh nhà cửa chất lượng cao, giá tốt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+
+      <!-- Logo -->
+      <a href="#" class="logo" id="logo-link">
+        <img src="logo.png" alt="Tự Lập 341 – TULAP PLASTIC" class="logo-img" />
+        <div class="logo-text-group">
+          <span class="logo-name">TỰ LẬP <span class="logo-accent">341</span></span>
+          <span class="logo-sub">TULAP PLASTIC</span>
+        </div>
+      </a>
+
+      <!-- Search -->
+      <div class="search-wrapper" id="search-wrapper">
+        <input type="text" id="search-input" class="search-input"
+          placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm" autocomplete="off" />
+        <button class="search-btn" id="search-btn" aria-label="Tìm kiếm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Nav actions -->
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="wishlist-btn" aria-label="Yêu thích">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="nav-icon-btn cart-btn" id="cart-btn" aria-label="Giỏ hàng">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Category Nav -->
+    <div class="cat-nav" id="cat-nav">
+      <div class="container">
+        <ul class="cat-list">
+          <li><a href="#" class="cat-link active" data-category="all">🏠 Tất cả</a></li>
+          <li><a href="#" class="cat-link" data-category="hop-thuc-pham">🍱 Hộp thực phẩm</a></li>
+          <li><a href="#" class="cat-link" data-category="ro-nhua">🧺 Rổ nhựa</a></li>
+          <li><a href="#" class="cat-link" data-category="ke-nha-bep">🍳 Kệ nhà bếp</a></li>
+          <li><a href="#" class="cat-link" data-category="ghe-nhua">🪑 Ghế nhựa</a></li>
+          <li><a href="#" class="cat-link" data-category="tu-nhua">🗄️ Tủ nhựa</a></li>
+          <li><a href="#" class="cat-link" data-category="ve-sinh">🧹 Vệ sinh nhà cửa</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- HERO BANNER -->
+    <section class="hero" id="hero">
+      <div class="hero-slider" id="hero-slider">
+
+        <div class="hero-slide active" style="--bg: linear-gradient(135deg,#FFD700 0%,#FFA500 100%);">
+          <div class="hero-content container">
+            <div class="hero-text">
+              <span class="hero-badge">🏆 Thương hiệu uy tín 20+ năm</span>
+              <h1 class="hero-title">Đồ Nhựa Gia Dụng<br/><span class="hero-highlight">TỰ LẬP 341</span><br/>Chất Lượng Vượt Trội</h1>
+              <p class="hero-desc">Hơn 30 loại sản phẩm nhựa gia dụng bền đẹp, an toàn thực phẩm – giao hàng toàn quốc</p>
+              <div class="hero-cta">
+                <a href="#products" class="btn btn-primary" id="hero-shop-btn">Mua ngay</a>
+                <a href="#products" class="btn btn-outline-dark" id="hero-explore-btn">Xem sản phẩm</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-blob"></div>
+              <img src="logo.png" alt="Tulap Plastic 341" class="hero-logo-big" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="--bg: linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);">
+          <div class="hero-content container">
+            <div class="hero-text">
+              <span class="hero-badge" style="background:rgba(255,215,0,.25);color:#FFD700;">⚡ Siêu tiết kiệm</span>
+              <h1 class="hero-title" style="color:#fff;">Rổ &amp; Hộp Nhựa<br/><span class="hero-highlight" style="color:#FFD700;">Giá Từ 10.000₫</span><br/>Bền Đẹp – An Toàn</h1>
+              <p class="hero-desc" style="color:rgba(255,255,255,.8);">Đạt tiêu chuẩn an toàn thực phẩm, không chứa BPA, màu sắc bền đẹp theo thời gian</p>
+              <div class="hero-cta">
+                <a href="#products" class="btn btn-yellow" id="hero-shop-btn2">Xem ngay</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-blob" style="background:rgba(255,215,0,.15);"></div>
+              <div class="hero-emoji">🛒</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-slide" style="--bg: linear-gradient(135deg,#2d6a4f 0%,#40916c 100%);">
+          <div class="hero-content container">
+            <div class="hero-text">
+              <span class="hero-badge">🌿 Sản phẩm xanh</span>
+              <h1 class="hero-title" style="color:#fff;">Tủ Nhựa &amp; Kệ<br/><span class="hero-highlight" style="color:#d8f3dc;">Thông Minh</span><br/>Cho Mọi Nhà</h1>
+              <p class="hero-desc" style="color:rgba(255,255,255,.85);">Tiết kiệm không gian, dễ lắp ráp, chịu tải trọng cao – sản phẩm đạt chuẩn xuất khẩu</p>
+              <div class="hero-cta">
+                <a href="#products" class="btn btn-primary" id="hero-shop-btn3">Khám phá</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-blob" style="background:rgba(255,255,255,.1);"></div>
+              <div class="hero-emoji">🗄️</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="slider-arrow slider-prev" id="slider-prev" aria-label="Slide trước">&#8592;</button>
+      <button class="slider-arrow slider-next" id="slider-next" aria-label="Slide sau">&#8594;</button>
+      <div class="slider-dots" id="slider-dots">
+        <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="dot" data-index="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-icon">🚚</span>
+          <div><strong>Giao hàng toàn quốc</strong><span>Đơn từ 150.000₫ miễn phí ship</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">🏆</span>
+          <div><strong>Thương hiệu uy tín</strong><span>20+ năm kinh nghiệm</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">✅</span>
+          <div><strong>Hàng chính hãng</strong><span>An toàn thực phẩm, không BPA</span></div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">🔄</span>
+          <div><strong>Đổi trả dễ dàng</strong><span>Trong vòng 7 ngày</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-tag">Danh sách sản phẩm</span>
+            <h2 class="section-title">Đồ Nhựa Gia Dụng Tự Lập 341</h2>
+          </div>
+          <div class="product-filters">
+            <button class="filter-btn active" data-sort="default" id="sort-default">Mặc định</button>
+            <button class="filter-btn" data-sort="price-asc" id="sort-asc">Giá tăng dần</button>
+            <button class="filter-btn" data-sort="price-desc" id="sort-desc">Giá giảm dần</button>
+          </div>
+        </div>
+
+        <div class="search-result-info" id="search-result-info" style="display:none;"></div>
+
+        <div class="product-grid" id="product-grid"></div>
+
+        <div class="load-more-wrapper">
+          <button class="btn btn-load-more" id="load-more-btn" style="display:none;">Xem thêm sản phẩm</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo-section">
+      <div class="container promo-grid">
+        <div class="promo-card promo-card--yellow">
+          <div class="promo-content">
+            <span class="promo-tag">🎁 Ưu đãi đặc biệt</span>
+            <h3>Mua 3 Tặng 1</h3>
+            <p>Áp dụng cho toàn bộ sản phẩm hộp thực phẩm và rổ nhựa trong tháng này</p>
+            <button class="btn btn-dark" id="promo-register-btn">Áp dụng ngay</button>
+          </div>
+          <div class="promo-emoji">🎉</div>
+        </div>
+        <div class="promo-card promo-card--dark">
+          <div class="promo-content">
+            <span class="promo-tag" style="background:rgba(255,215,0,.25);color:#FFD700;">📦 Đại lý</span>
+            <h3>Mua Sỉ Giá Tốt</h3>
+            <p>Chiết khấu từ 15–30% cho đơn hàng sỉ từ 50 sản phẩm trở lên</p>
+            <button class="btn btn-yellow" id="promo-app-btn">Liên hệ ngay</button>
+          </div>
+          <div class="promo-emoji">📦</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>🛒 Giỏ hàng (<span id="cart-count-label">0</span> sp)</h2>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Đóng">✕</button>
+    </div>
+    <div class="cart-body" id="cart-body">
+      <div class="cart-empty" id="cart-empty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>Giỏ hàng trống</p>
+        <span>Hãy thêm sản phẩm vào giỏ nhé!</span>
+      </div>
+      <ul class="cart-items" id="cart-items"></ul>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Tạm tính:</span>
+        <strong id="cart-total">0₫</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkout-btn">Thanh toán ngay</button>
+      <button class="btn btn-ghost btn-block" id="continue-btn">Tiếp tục mua sắm</button>
+    </div>
+  </aside>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Tulap Plastic 341" class="footer-logo-img" />
+          <div>
+            <div class="footer-logo-name">TỰ LẬP <span>341</span></div>
+            <div class="footer-logo-sub">TULAP PLASTIC</div>
+          </div>
+        </div>
+        <p>Chuyên cung cấp đồ nhựa gia dụng chất lượng cao, an toàn cho sức khỏe, đa dạng mẫu mã – phục vụ hàng triệu gia đình Việt Nam.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Zalo">Z</a>
+          <a href="#" class="social-link" aria-label="Youtube">▶</a>
+          <a href="#" class="social-link" aria-label="Shopee">🛍</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Danh mục sản phẩm</h4>
+        <ul>
+          <li><a href="#">Hộp thực phẩm</a></li>
+          <li><a href="#">Rổ nhựa</a></li>
+          <li><a href="#">Kệ nhà bếp</a></li>
+          <li><a href="#">Ghế nhựa</a></li>
+          <li><a href="#">Tủ nhựa</a></li>
+          <li><a href="#">Vệ sinh nhà cửa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Mua sỉ / Đại lý</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <ul>
+          <li>📞 0901 341 341</li>
+          <li>📧 tulap341@gmail.com</li>
+          <li>📍 341 Nguyễn Trãi, TP.HCM</li>
+          <li>🕐 7:00 – 21:00 mỗi ngày</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tự Lập 341 – TULAP PLASTIC. Tất cả quyền được bảo lưu.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
